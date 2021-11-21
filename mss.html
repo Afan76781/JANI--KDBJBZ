@@ -1,0 +1,500 @@
+
+<body>
+<style >
+
+.container{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#toggle{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 75px;
+    background-color: #15181f;
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#toggle:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+}
+p{
+    font-family: "Open Sans",sans-serif;
+    line-height: 35px;
+    text-align: justify;
+}
+.dark-theme{
+    background-color: #15181f;
+    color: #e5e5e5;
+}
+.dark-theme #toggle{
+    background-color: #ffffff;
+}
+.dark-theme #toggle:after{
+    background-color: transparent;
+    box-shadow: 10px 10px #15181f;
+    top: -4px;
+    left: 30px;
+}
+</style>
+    <div class="container">
+        <input type="checkbox" id="toggle">
+    </div>
+    
+</body>
+</html>
+<script >
+document.getElementById("toggle").addEventListener("click", function(){
+    document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+});
+</script>
+
+<style>
+html {
+font: 100%/1.5 "Share Tech Mono", Share Tech Mono, Share Tech Mono;
+color: #3d464d;
+background-color: ;
+-webkit-font-smoothing: Share Tech Mono;
+width: 100%;
+text-align: center;
+}
+
+* {
+font-family: 'Share Tech Mono', Share Tech Mono;
+margin: 0;
+padding: 0;
+outline: 0;
+word-wrap: break-word !important
+}
+
+*,
+*:before,
+*:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+body.fade {
+opacity: 0.8;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+ext {
+background: #000;
+display: flex;
+height: 100vh;
+transition: all .8s linear;
+}
+
+.ext {
+width: 100%;
+margin: auto;
+}
+
+.ext_glitch {
+font-size: 55px;
+color: #fff;
+line-height: 1em;
+margin: auto;
+padding: 1%;
+text-shadow: -1px 0 #f00, 1px 0 #40bad8;
+}
+
+
+.ext_glitch3 {
+font-size: 33px;
+color: #fff;
+line-height: 1em;
+margin: auto;
+padding: 1%;
+text-shadow: -1px 0 #f00, 1px 0 #40bad8;
+}
+
+
+.ext_glitch5 {
+font-size: 22px;
+color: #fff;
+line-height: 1em;
+margin: auto;
+padding: 1%;
+text-shadow: -1px 0 #f00, 1px 0 #40bad8;
+}
+
+.ext_span1 {
+color: #fff;
+letter-spacing: 5px;
+font-size: 11px;
+position: absolute;
+display: block;
+text-align: center;
+width: 100%;
+}
+
+.ext_span2 {
+color: #fff;
+letter-spacing: 5px;
+font-size: 11px;
+position: absolute;
+display: block;
+text-align: center;
+width: 100%;
+height: 100%;
+background: #000;
+}
+
+ext div.ext h1.ext_glitch span.ext_span1 {
+display: block;
+}
+
+ext div.ext:hover h1.ext_glitch span.ext_span1 {
+display: none;
+}
+
+ext div.ext span.ext_span2 {
+display: none;
+}
+
+ext div.ext:hover span.ext_span2 {
+display: block;
+}
+
+.skew {
+-moz-animation: shift 1s ease-in-out infinite alternate;
+-webkit-animation: shift 1s ease-in-out infinite alternate;
+animation: shift 1s ease-in-out infinite alternate;
+}
+
+@-moz-keyframes shift {
+0%,
+40%,
+44%,
+58%,
+61%,
+65%,
+69%,
+73%,
+100% {
+-moz-transform: skewX(0deg);
+transform: skewX(0deg);
+}
+41% {
+-moz-transform: skewX(10deg);
+transform: skewX(10deg);
+}
+42% {
+-moz-transform: skewX(-10deg);
+transform: skewX(-10deg);
+}
+59% {
+-moz-transform: skewXsdr;(40deg) skewY(10deg);
+transform: skewX(40deg) skewY(10deg);
+}
+60% {
+-moz-transform: skewX(-40deg) skewY(-10deg);
+transform: skewX(-40deg) skewY(-10deg);
+}
+63% {
+-moz-transform: skewX(10deg) skewY(-5deg);
+transform: skewX(10deg) skewY(-5deg);
+}
+70% {
+-moz-transform: skewX(-50deg) skewY(-20deg);
+transform: skewX(-50deg) skewY(-20deg);
+}
+71% {
+-moz-transform: skewX(10deg) skewY(-10deg);
+transform: skewX(10deg) skewY(-10deg);
+}
+}
+
+@-webkit-keyframes shift {
+0%,
+40%,
+44%,
+58%,
+61%,
+65%,
+69%,
+73%,
+100% {
+-webkit-transform: skewX(0deg);
+transform: skewX(0deg);
+}
+41% {
+-webkit-transform: skewX(10deg);
+transform: skewX(10deg);
+}
+42% {
+-webkit-transform: skewX(-10deg);
+transform: skewX(-10deg);
+}
+59% {
+-webkit-transform: skewX(40deg) skewY(10deg);
+transform: skewX(40deg) skewY(10deg);
+}
+60% {
+-webkit-transform: skewX(-40deg) skewY(-10deg);
+transform: skewX(-40deg) skewY(-10deg);
+}
+63% {
+-webkit-transform: skewX(10deg) skewY(-5deg);
+transform: skewX(10deg) skewY(-5deg);
+}
+70% {
+-webkit-transform: skewX(-50deg) skewY(-20deg);
+transform: skewX(-50deg) skewY(-20deg);
+}
+71% {
+-webkit-transform: skewX(10deg) skewY(-10deg);
+transform: skewX(10deg) skewY(-10deg);
+}
+}
+
+@keyframes shift {
+0%,
+40%,
+44%,
+58%,
+61%,
+65%,
+69%,
+73%,
+100% {
+-moz-transform: skewX(0deg);
+-ms-transform: skewX(0deg);
+-webkit-transform: skewX(0deg);
+transform: skewX(0deg);
+}
+41% {
+-moz-transform: skewX(10deg);
+-ms-transform: skewX(10deg);
+-webkit-transform: skewX(10deg);
+transform: skewX(10deg);
+}
+42% {
+-moz-transform: skewX(-10deg);
+-ms-transform: skewX(-10deg);
+-webkit-transform: skewX(-10deg);
+transform: skewX(-10deg);
+}
+59% {
+-moz-transform: skewX(40deg) skewY(10deg);
+-ms-transform: skewX(40deg) skewY(10deg);
+-webkit-transform: skewX(40deg) skewY(10deg);
+transform: skewX(40deg) skewY(10deg);
+}
+60% {
+-moz-transform: skewX(-40deg) skewY(-10deg);
+-ms-transform: skewX(-40deg) skewY(-10deg);
+-webkit-transform: skewX(-40deg) skewY(-10deg);
+transform: skewX(-40deg) skewY(-10deg);
+}
+63% {
+-moz-transform: skewX(10deg) skewY(-5deg);
+-ms-transform: skewX(10deg) skewY(-5deg);
+-webkit-transform: skewX(10deg) skewY(-5deg);
+transform: skewX(10deg) skewY(-5deg);
+}
+70% {
+-moz-transform: skewX(-50deg) skewY(-20deg);
+-ms-transform: skewX(-50deg) skewY(-20deg);
+-webkit-transform: skewX(-50deg) skewY(-20deg);
+transform: skewX(-50deg) skewY(-20deg);
+}
+71% {
+-moz-transform: skewX(10deg) skewY(-10deg);
+-ms-transform: skewX(10deg) skewY(-10deg);
+-webkit-transform: skewX(10deg) skewY(-10deg);
+transform: skewX(10deg) skewY(-10deg);
+}
+}
+
+
+<br>
+<p align="center" width="400" height="150"> <img src="https://media.giphy.com/media/B1xUp52rUnrv1Leakw/giphy.gif"></p>
+</br>
+<title> Hacked By  </title>
+<link rel="icon" href="none" type="image/x-icon" />
+<link rel="shortcut icon" href="https://giphy.com/gifs/970Sr8vpwEbXG/html5" type="image/x-icon" />
+<style type="text/css">
+
+
+
+        
+</style>
+</head><body alink="gray" bgcolor="black" vlink="gray" link="gray" text="red">
+<p></p><center>
+<center></center>
+<script type="text/javascript">
+TypingText = function(element, interval, cursor, finishedCallback) {
+if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+this.running = true;
+return;
+}
+this.element = element;
+this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+this.origText = this.element.innerHTML;
+this.unparsedOrigText = this.origText;
+this.cursor = (cursor ? cursor : "");
+this.currentText = "";
+this.currentChar = 0;
+this.element.typingText = this;
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+TypingText.all.push(this);
+this.running = false;
+this.inTag = false;
+this.tagBuffer = "";
+this.inHTMLEntity = false;
+this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+if(this.running) return;
+if(typeof this.origText == "undefined") {
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+return;
+}
+if(this.currentText == "") this.element.innerHTML = "";
+if(this.currentChar < this.origText.length) {
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+this.tagBuffer = "<";
+this.inTag = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+this.tagBuffer += ">";
+this.inTag = false;
+this.currentText += this.tagBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inTag) {
+this.tagBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+this.HTMLEntityBuffer = "&";
+this.inHTMLEntity = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+this.HTMLEntityBuffer += ";";
+this.inHTMLEntity = false;
+this.currentText += this.HTMLEntityBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inHTMLEntity) {
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else {
+this.currentText += this.origText.charAt(this.currentChar);
+}
+this.element.innerHTML = this.currentText;
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+this.currentChar++;
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+} else {
+this.currentText = "";
+this.currentChar = 0;
+this.running = false;
+this.finishedCallback();
+}
+}
+</script>
+
+        
+        
+        </body>
+<center>
+</font><p id="message"><font> <strong><br>Developer Information <br>
+App Created By Mr Bablu Jani
+<br>thanks for using my app
+<br>contact me
+<br>Email : Afan76781@gmail.com <br>
+Phone : +92 3081569483 
+<br>Fb Id : Bablu_Jani
+<strong>By Mr Bablu *_* </strong><br>
+<br> <a style=”color:#f00ff;font-size:40px;text-decoration:blink;”></a>
+</font></p>
+<p><font><br>
+<br>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=384191914936497";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+new TypingText(document.getElementById("message"), 18, function(i){ var ar = new Array("\\", "|", "/", "-"); return " " + ar[i.length % ar.length]; });
+//Type out examples:
+TypingText.runAll();
+</script>
+</font></p>
+</center></center>
+<br>
+</br>
+</body></html>
+<!-- aghaze larzeshe safhe-->
+<meta http-equiv="Content-Language" content="en-us">
+<SCRIPT language=JavaScript>
+<!-- Begin
+function shake(n) {
+if (parent.moveBy) {
+for (i = 10; i > 0; i--) {
+for (j = n; j > 0; j--) {
+parent.moveBy(-i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,-i);
+parent.moveBy(i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,i);
+}
+}
+}
+}
+//  End -->
+<!--
+shake(1);
+//-->
+</SCRIPT>
