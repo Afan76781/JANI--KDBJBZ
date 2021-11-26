@@ -1,0 +1,138 @@
+</h1>
+<div class='pInf pSml ps nTm nul n'>
+</div>
+<div class='pInr'>
+<div class='pAd'>
+</div>
+<div class='pEnt' id='postID-2160061907414529160'>
+<div class='pS post-body postBody' id='postBody'>
+<!--DOCTYPE html-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NK TV</title>
+  <link rel='stylesheet' href='https://unpkg.com/plyr@3.6.8/dist/plyr.css'>
+<style>
+body {
+  font-family: sans-serif;
+}
+.plyr {
+  --plyr-color-main: #ee0000;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no" >
+  <video id="player" crossorigin controls preload="none" width="500" poster="  ">
+  <source src="https://m-c010-j2apps.s.llnwi.net/hls/8068.ABZYCool.in.m3u8" type="application/x-mpegURL">
+</video>
+<script src='https://unpkg.com/plyr@3.6.8/dist/plyr.polyfilled.min.js'></script>
+<script src='https://unpkg.com/hls.js@1.0.4/dist/hls.min.js'></script>
+<script id="rendered-js" >
+function updateQuality(newQuality) {
+  window.hls.levels.forEach((level, levelIndex) => {
+    if (level.height === newQuality) {
+      console.log('Found quality match with ' + newQuality);
+      window.hls.currentLevel = levelIndex;
+    };
+  });
+};
+
+var video = document.querySelector('video');
+var source = video.getElementsByTagName('source')[0].src;
+var player = null;
+
+// For more options see: https://github.com/sampotts/plyr/#options
+// captions.update is required for captions to work with hls.js
+var defaultOptions = {
+  duration: 6340,
+  previewThumbnails: {
+    enabled: true,
+    src:'https://m-c010-j2apps.s.llnwi.net/hls/8068.ABZYCool.in.m3u8'
+  },
+  captions: {
+    active: false },
+  resetOnEnd: true,
+  i18n: {
+    qualityLabel: {
+      0: 'Auto' } } };
+
+if (Hls.isSupported()) {
+  // For more Hls.js options, see https://github.com/dailymotion/hls.js
+  var hls = new Hls();
+  hls.loadSource(source);
+
+  // From the m3u8 playlist, hls parses the manifest and returns
+  // all available video qualities. This is important, in this approach,
+  // we will have one source on the Plyr player.
+  hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+    // Transform available levels into an array of integers (height values).
+    var availableQualities = hls.levels.map(l => l.height);
+    availableQualities.unshift(0); //prepend 0 to quality array
+
+    // Add new qualities to option
+    defaultOptions.quality = {
+      default: 0,
+      options: availableQualities,
+      // this ensures Plyr to use Hls to update quality level
+      forced: true,
+      onChange: e => updateQuality(e) };
+
+
+    // Initialize here
+    var player = new Plyr(video, defaultOptions);
+  });
+  hls.on(Hls.Events.LEVEL_SWITCHED, function (event, data) {
+    // hls.attachMedia(video);
+    var span = document.querySelector('.plyr__menu__container [data-plyr=quality][value=0] span');
+    if (hls.autoLevelEnabled) {
+      span.innerHTML = `Auto (${hls.levels[data.level].height}p)`;
+    } else {
+      span.innerHTML = `Auto`;
+    };
+  });
+  hls.attachMedia(video);
+  window.hls = hls;
+} else {
+  // default options with no quality update in case Hls is not supported
+  var player = new Plyr(video, defaultOptions);
+};
+
+// video.onplay = function() {
+//   if (hls) {
+//     hls.attachMedia(video);
+//     this.play();
+//   }
+// }
+//# sourceURL=pen.js
+    </script>
+</body>
+</html>
+ 
+
+
+<marquee behavior="alternate" bgcolor="#27447" style="color: white;">Nurakkash kotal Whatsapp Report </marquee>
+
+</center>
+
+<p><center>
+<div class="widget-content">
+<script type="text/javascript">(function() {var script=document.createElement("script");script.type="text/javascript";script.async =true;script.src="//telegram.im/widget-button/index.php?id=@ipl_live_tv_2021";document.getElementsByTagName("head")[0].appendChild(script);})();</script>
+<a href="https://chat.whatsapp.com/Is8dU9fZseN6ZyWteuPgK8 " target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:15px;width:255px;background:#0b5394;box-shadow:1px 1px 5px #0b5394;color:#FFFFFF;border-radius:96px;" title="" rel="noopener"><i></i> Join Whatsapp  Report </a>
+</div>
+</center></p>
+
+
+
+
+         
+<html>
+
