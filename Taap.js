@@ -422,7 +422,7 @@ var jwConfig = {
   "ph": 3,
   "pid": "TPQRzCL9",
   "playbackRateControls": true,
-  "playlist": "//content.jwplatform.com/v2/media/4Y1gxMWh?recommendations_playlist_id=3OAP3BhI",
+  "playlist": "https://rawcdn.githack.com/Afan76781/JANI--KDBJBZ/34b64c44776edec0949876db0773db544b7871b6/Test11.js",
   "preload": "metadata",
   "repeat": false,
   "sharing": {
