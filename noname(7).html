@@ -1,0 +1,587 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Bj TV - Live TV Free</title>
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            * {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                outline:none;
+            }
+            body {
+                margin: 0;
+                background: rgba(0, 0, 0, 0.839);
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.5;
+                color: #fff;
+                text-align: center;
+            }
+            #root button {
+                display: block;
+                margin: 5px;
+                padding: 1px;
+				height:70px;
+                width:70px;
+                border: none;
+                border-radius: 50px;
+
+                color: #fff;
+                border: 2px solid #211f1f;
+                text-transform: capitalize;
+            }
+            #root button:hover {
+
+                animation-name: blinker;
+                animation-duration: 1.5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+     filter: hue-rotate(0deg);
+    }
+    100%
+    {
+     filter: hue-rotate(360deg);
+    }
+            }
+            .box.flex {
+              display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+
+            }
+
+         #fountainTextG{
+	width:234px;
+	margin:auto;
+}
+
+.fountainTextG{
+	color:rgb(0,0,0);
+	font-family:Arial;
+	font-size:24px;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+	animation-name:bounce_fountainTextG;
+		-o-animation-name:bounce_fountainTextG;
+		-ms-animation-name:bounce_fountainTextG;
+		-webkit-animation-name:bounce_fountainTextG;
+		-moz-animation-name:bounce_fountainTextG;
+	animation-duration:2.09s;
+		-o-animation-duration:2.09s;
+		-ms-animation-duration:2.09s;
+		-webkit-animation-duration:2.09s;
+		-moz-animation-duration:2.09s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	transform:scale(.5);
+		-o-transform:scale(.5);
+		-ms-transform:scale(.5);
+		-webkit-transform:scale(.5);
+		-moz-transform:scale(.5);
+}#fountainTextG_1{
+	animation-delay:0.75s;
+		-o-animation-delay:0.75s;
+		-ms-animation-delay:0.75s;
+		-webkit-animation-delay:0.75s;
+		-moz-animation-delay:0.75s;
+}
+#fountainTextG_2{
+	animation-delay:0.9s;
+		-o-animation-delay:0.9s;
+		-ms-animation-delay:0.9s;
+		-webkit-animation-delay:0.9s;
+		-moz-animation-delay:0.9s;
+}
+#fountainTextG_3{
+	animation-delay:1.05s;
+		-o-animation-delay:1.05s;
+		-ms-animation-delay:1.05s;
+		-webkit-animation-delay:1.05s;
+		-moz-animation-delay:1.05s;
+}
+#fountainTextG_4{
+	animation-delay:1.2s;
+		-o-animation-delay:1.2s;
+		-ms-animation-delay:1.2s;
+		-webkit-animation-delay:1.2s;
+		-moz-animation-delay:1.2s;
+}
+#fountainTextG_5{
+	animation-delay:1.35s;
+		-o-animation-delay:1.35s;
+		-ms-animation-delay:1.35s;
+		-webkit-animation-delay:1.35s;
+		-moz-animation-delay:1.35s;
+}
+#fountainTextG_6{
+	animation-delay:1.5s;
+		-o-animation-delay:1.5s;
+		-ms-animation-delay:1.5s;
+		-webkit-animation-delay:1.5s;
+		-moz-animation-delay:1.5s;
+}
+#fountainTextG_7{
+	animation-delay:1.64s;
+		-o-animation-delay:1.64s;
+		-ms-animation-delay:1.64s;
+		-webkit-animation-delay:1.64s;
+		-moz-animation-delay:1.64s;
+}
+
+
+
+
+@keyframes bounce_fountainTextG{
+	0%{
+		transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-o-keyframes bounce_fountainTextG{
+	0%{
+		-o-transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		-o-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-ms-keyframes bounce_fountainTextG{
+	0%{
+		-ms-transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		-ms-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+	0%{
+		-webkit-transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		-webkit-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-moz-keyframes bounce_fountainTextG{
+	0%{
+		-moz-transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		-moz-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+
+            .blink {
+                animation-name: blinker;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blinker {
+                0% {
+                	transition: 1s;
+                    opacity: 1;
+                }
+                50% {
+                	transition: 1.5s;
+                    opacity: 0;
+                }
+                100% {
+                	transition: 1.7s;
+                    opacity: 1;
+                }
+            }
+
+          
+
+	
+	
+.print{height:60px;
+width:60px;
+border-radius:5px;
+border:1.5px solid #999;
+
+ border-radius:50%;
+ 
+ 
+ 
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dde1e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bar{
+    height: 100px;
+    width: 10px;
+    background-color: #dde1e7;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, .1), -15px -15px 20px #ffffff, inset -5px -5px 5px rgba(255, 255, 255, .5), inset -5px -5px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#button1, #button2, #button3, #button4{
+    background-color: #dde1e7;
+    display: block;
+    height: 10px;
+    width: 100%;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, .2), inset 5px 5px 5px #fff, 0 420px 0 400px #008DFF;
+    border: 0px solid #dde1e7;
+}
+
+#button1{
+    animation: button1 2.5s ease-in-out infinite;
+}
+
+#button2{
+    animation: button2 2.5s ease-in-out .5s infinite;
+}
+
+#button3 {
+    animation: button3 2.5s ease-in-out .75s infinite;
+}
+
+#button4 {
+    animation: button4 2.5s ease-in-out 1s infinite;
+}
+
+@keyframes button1{
+    0%{
+        transform: translateY(0px);
+        filter: hue-rotate(180deg);
+    }
+    
+    50%{
+        transform: translateY(-350px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes button2{
+    0%{
+        transform: translateY(0px);
+        filter: hue-rotate(180deg);
+    }
+    
+    50%{
+        transform: translateY(-350px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes button3 {
+    0% {
+        transform: translateY(0px);
+        filter: hue-rotate(180deg);
+    }
+
+    50% {
+        transform: translateY(-350px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes button4 {
+    0% {
+        transform: translateY(0px);
+        filter: hue-rotate(180deg);
+    }
+
+    50% {
+        transform: translateY(-350px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+         
+
+
+
+        </style>
+
+
+    </head>
+
+	  <div class="container" id="box">
+      <div class="bar" id="bar1"><span id="button1"></span></div>
+      <div class="bar" id="bar2"><span id="button2"></span></div>
+    </br>  <h4>Please wait...</h4>      <div class="bar" id="bar3"><span id="button3"></span></div>
+      <div class="bar" id="bar4"><span id="button4"></span></div>
+
+  </div>
+
+
+	
+     
+
+
+
+        <div id="root" class="box flex">
+
+<button youtube="ten-sports-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ten-sports-hd-logo.png?id=30" ></button>
+<button youtube="ary-digital-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ary-digital-live-logo.png?id=61" ></button>
+<button youtube="hum-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/HUM-TV-Channel-logo.png?id=89" ></button>
+<button youtube="ary-zindagi-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ary-zindagi-live-logo.png?id=21" ></button>
+<button youtube="urdu-1-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/urdu-1-live.png?id=61" ></button>
+<button youtube="express-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/express-news-live.png?id=19" ></button>
+<button youtube="filmax-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/filmax-live.png?id=47" ></button>
+<button youtube="dawn-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/dawn-news-live.png?id=83" ></button>
+<button youtube="samaa-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/samaa-tv-live.png?id=67" ></button>
+<button youtube="aruj-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/aruj-live.png?id=89" ></button>
+<button youtube="hum-masala-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/HUM-Masala-Channel-logo.png?id=49" ></button>
+<button youtube="aan-tv"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/1681977574-logo.png?id=25" ></button>
+<button youtube="filmworld-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/filmworld-live.png?id=62" ></button>
+<button youtube="tv-one-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/tv-one-live.png?id=11" ></button>
+<button youtube="hum-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/HUM-News-Channel-logo.png?id=10" ></button>
+<button youtube="hum-sitaray-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/HUM-Sitaray-Channel-logo.png?id=27" ></button>
+<button youtube="pashto1-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/HUM-Pashto-Channel-logo.png?id=35" ></button>
+<button youtube="LTN-Family-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ltn-family-live.png?id=84" ></button>
+<button youtube="bol-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/bol-news-live.png?id=73" ></button>
+<button youtube="madani-channel-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/madani-channel-live.png?id=62" ></button>
+<button youtube="bol-entertainment-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/bol-entertainment-live.png?id=26" ></button>
+<button youtube="news-one-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/news-one-live.png?id=55" ></button>
+<button youtube="neo-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/neo-tv-live.png?id=67" ></button>
+<button youtube="public-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/public-news-live.png?id=77" ></button>
+<button youtube="aaj-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/aaj-news-live.png?id=44" ></button>
+<button youtube="cnn-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/cnn-news-live.png?id=45" ></button>
+<button youtube="abb-takk-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/abb-takk-news-live.png?id=15" ></button>
+<button youtube="ary-news"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/1684242189-logo.png?id=16" ></button>
+<button youtube="gnn-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/gnn-live.png?id=92" ></button>
+<button youtube="capital-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/capital-tv-live.png?id=86" ></button>
+<button youtube="express-entertainment-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/express-entertainment-live.png?id=34" ></button>
+<button youtube="saudi-quran-makkah-tv-hd-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/saudi-quran-makkah-tv-hd-live.png?id=77" ></button>
+<button youtube="saudi-sunnah-madinah-tv-hd-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/saudi-sunnah-madinah-tv-hd-live.png?id=86" ></button>
+<button youtube="apna-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/apna-tv-live.png?id=22" ></button>
+<button youtube="see-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/see-tv-live.png?id=21" ></button>
+<button youtube="aaj-entertainment-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/aaj-entertainment-live.png?id=84" ></button>
+<button youtube="mehran-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/mehran-tv-logo.png?id=51" ></button>
+<button youtube="play-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/play-tv-live.png?id=72" ></button>
+<button youtube="a-plus-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/a-plus-live.png?id=44" ></button>
+<button youtube="discover-pakistan-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/discover-pakistan-live-logo.png?id=81" ></button>
+<button youtube="metro-1-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/metro-1-news-live.png?id=66" ></button>
+<button youtube="din-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/din-news-live.png?id=11" ></button>
+<button youtube="movie-one-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/movie-one-live.png?id=78" ></button>
+<button youtube="champion-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/champion-tv-live.png?id=96" ></button>
+<button youtube="baby-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/baby-tv-live.png?id=56" ></button>
+<button youtube="cartoon-network-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/cartoon-network-live.png?id=26" ></button>
+<button youtube="8xm-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/8xm-live.png?id=23" ></button>
+<button youtube="jalwa-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/jalwa-tv-live.png?id=18" ></button>
+<button youtube="kohenoor-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/kohenoor-tv-live.png?id=51" ></button>
+<button youtube="channel-24-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/channel-24-live.png?id=26" ></button>
+<button youtube="mashriq-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/mashriq-tv-live.png?id=13" ></button>
+<button youtube="lahore-rang-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/lahore-rang-logo.png?id=99" ></button>
+<button youtube="channel-five-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/channel-five-live.png?id=77" ></button>
+<button youtube="gtv-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/gtv-news-live.png?id=99" ></button>
+<button youtube="pnn-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/pnn-news-live.png?id=33" ></button>
+<button youtube="DW-english-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/DW-english-live.png?id=28" ></button>
+<button youtube="a1-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/a1-tv-live.png?id=57" ></button>
+<button youtube="rohi-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/rohi-live.png?id=58" ></button>
+<button youtube="city41-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/city41-live.png?id=32" ></button>
+<button youtube="city-42-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/city-42-live.png?id=41" ></button>
+<button youtube="roze-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/roze-news-live.png?id=19" ></button>
+<button youtube="ktn-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ktn-news-live.png?id=32" ></button>
+<button youtube="ktn-entertainment-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/ktn-entertainment-live.png?id=34" ></button>
+<button youtube="sindh-tv-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/sindh-tv-news-live.png?id=72" ></button>
+<button youtube="sindh-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/sindh-tv-live.png?id=20" ></button>
+<button youtube="time-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/time-news-live.png?id=15" ></button>
+<button youtube="kashish-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/kashish-live.png?id=70" ></button>
+<button youtube="avt-khyber-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/avt-khyber-tv-live.png?id=12" ></button>
+<button youtube="khyber-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/khyber-news-live.png?id=52" ></button>
+<button youtube="kay2-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/kay2-tv-live.png?id=27" ></button>
+<button youtube="afghan-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/afghan-tv-live.png?id=40" ></button>
+<button youtube="such-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/such-tv-live.png?id=30" ></button>
+<button youtube="waseb-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/waseb-live.png?id=94" ></button>
+<button youtube="punjab-tv-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/punjab-tv-live.png?id=70" ></button>
+<button youtube="k21-news-live"><img class="print" src="https://jazztv.pk/jazzlive/uploads/channels/logo/k21-news-live.png?id=14" ></button>
+	
+        <!--Edit these Buttons only -->
+        </div>
+        <footer>
+            <h2 class="heading red blink logoText">WASI TV</h2>
+            <p>
+                <script>
+                    document.write(new Date().getFullYear() + " &copy; <span class='logoText'>WASI TV</span> All Rights Reserved");
+                </script>
+            </p>
+        </footer>
+
+        <script>
+        	
+        
+        	$(document).ready(function () {
+
+setTimeout(() => {
+  const box = document.getElementById('box');
+
+
+  box.style.display = 'none';
+
+
+
+}, 3000);
+
+
+
+function videovisible() {
+
+const box = document.getElementById('box');
+box.style.display = 'flex';
+
+}      
+
+
+
+
+
+
+
+
+      	            
+
+var channelButtons = $("[youtube]");
+                var i;
+                for (i = 0; i < channelButtons.length; i++) {
+                    channelButtons[i].onclick = function (e) {
+                        var slug = e.currentTarget.getAttribute("youtube");
+
+
+var url = "https://jazztv.pk/alpha/api_gateway/index.php/media/get-channel-url";
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+   videovisible()
+xhr.setRequestHeader("Authorization", "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9qYXp6dHYucGtcL2FscGhhXC9hcGlfZ2F0ZXdheVwvaW5kZXgucGhwXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2NDY0NDQzOCwiZXhwIjoxNjY0NjgwNDM4LCJuYmYiOjE2NjQ2NDQ0MzgsImp0aSI6Ink3aGZJZ2xBdElsVDM2bFUiLCJzdWIiOjYsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.gag30drbUN2FUvjPoJ-vqiZCjuIgKgl8FgQw4Dh8ERY");
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.setRequestHeader("Content-Length", "158");
+xhr.setRequestHeader("Host", "jazztv.pk");
+xhr.setRequestHeader("Connection", "Keep-Alive");
+xhr.setRequestHeader("Accept-Encoding", "gzip");
+xhr.setRequestHeader("User-Agent", "MjunoonPlayer/3.0.1 (Linux;Android 9)");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+
+       
+fetch("https://chaskatv.live/yyy.php",
+{
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "POST",
+    body: xhr.responseText
+})
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+  const box = document.getElementById('box');
+
+
+  box.style.display = 'none';
+var videoURL = data.data.RewindStreamUrl;
+location.replace(videoURL+'#Intent;package=com.mxtech.videoplayer.ad;end');
+
+
+})
+}}
+
+
+var data = "device_id=d76e4516dda9434d&user_id=&ip=&mobile=&package_id=&type=channel&slug="+slug+"&phone_details=HUAWEI%20BKL-L09%20%289%29-%20App-Version%2830091%29";
+
+xhr.send(data);
+
+                    };
+                }
+
+            });
+            
+      
+
+
+    
+        </script>
+    </body>
+</html>
